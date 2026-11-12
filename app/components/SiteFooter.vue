@@ -10,7 +10,7 @@ const year = new Date().getFullYear()
         <BrandMonogram :size="56" tone="light" />
         <p class="footer__name">Alexsandra Rodrigues</p>
         <p class="footer__tag">Centro de Bem-Estar e Podologia</p>
-        <p class="footer__desc">Podóloga em Itapema (SC), no bairro Meia Praia. Podologista e laserterapeuta.</p>
+        <p class="footer__desc">Podóloga em Itapema (SC), no bairro Meia Praia. 30 anos de profissão e formação superior em Podologia pela Anhembi Morumbi.</p>
       </div>
       <nav aria-label="Tratamentos">
         <h2 class="footer__title">Tratamentos</h2>

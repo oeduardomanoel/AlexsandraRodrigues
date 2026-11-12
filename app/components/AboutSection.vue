@@ -23,7 +23,7 @@ import { business } from '#shared/business'
         </figure>
         <div class="about__badge" data-reveal="zoom" style="--d: 300ms">
           <BrandMonogram :size="54" />
-          <span>Empresa<br>liderada por<br>mulher</span>
+          <span>1ª de Itapema<br>com formação<br>superior</span>
         </div>
       </div>
 
@@ -33,8 +33,12 @@ import { business } from '#shared/business'
           Prazer, <em>Alexsandra Rodrigues.</em>
         </h2>
         <p data-reveal style="--d: 180ms">
-          Podologista e laserterapeuta, a Alexsandra atende em Meia Praia, no Centro de Bem-Estar e Podologia que leva o nome dela.
-          O espaço novo foi inaugurado em 2024, e foi assim que ela contou a novidade no Instagram:
+          São {{ business.yearsExperience }} anos de profissão. A Alexsandra é a primeira podóloga de Itapema com formação de nível
+          superior em Podologia, pela {{ business.university }}, em {{ business.universityCity }}, e tem especializações na área.
+        </p>
+        <p data-reveal style="--d: 210ms">
+          Hoje ela atende em Meia Praia, no Centro de Bem-Estar e Podologia que leva o nome dela. O espaço novo foi inaugurado
+          em 2024, e foi assim que ela contou a novidade no Instagram:
         </p>
 
         <blockquote class="quote" data-reveal style="--d: 240ms">
@@ -57,8 +61,8 @@ import { business } from '#shared/business'
             <span>avaliações de clientes</span>
           </li>
           <li>
-            <strong>Seg a sáb</strong>
-            <span>das 9h às 18h</span>
+            <strong>{{ business.yearsExperience }} anos</strong>
+            <span>de profissão</span>
           </li>
         </ul>
       </div>

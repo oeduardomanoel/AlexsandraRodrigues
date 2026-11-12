@@ -21,7 +21,7 @@ defineProps<{ name: string; size?: number }>()
       <path d="M9 9.5a3 3 0 0 1 6 0V13H9z" />
       <path d="M7 17h10" />
     </template>
-    <!-- gota / fungos -->
+    <!-- gota / micose -->
     <template v-else-if="name === 'drop'">
       <path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z" />
       <path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5" />

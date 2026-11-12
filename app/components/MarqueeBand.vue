@@ -1,11 +1,12 @@
 <script setup lang="ts">
 const items = [
   'Unha encravada',
-  'Fungos nas unhas',
+  'Micose nas unhas',
   'Laserterapia',
   'Pé diabético',
   'Calos e calosidades',
   'Rachaduras',
+  '30 anos de profissão',
   'Podologia clínica',
   'Meia Praia · Itapema',
 ]

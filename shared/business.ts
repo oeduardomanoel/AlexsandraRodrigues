@@ -40,6 +40,10 @@ export const business = {
     closes: '18:00',
   },
   rating: { value: '5,0', count: 45 },
+  yearsExperience: 30,
+  university: 'Universidade Anhembi Morumbi',
+  universityCity: 'São Paulo',
+  pioneer: 'Primeira podóloga de Itapema com formação de nível superior em Podologia',
 } as const
 
 export const waLink = (msg = 'Oi, Alexsandra! Vim pelo site e quero agendar uma avaliação.') =>
@@ -53,9 +57,9 @@ export const services = [
     icon: 'nail',
   },
   {
-    slug: 'fungos-nas-unhas',
-    title: 'Fungos nas unhas',
-    short: 'Tratamento da onicomicose com acompanhamento, pra unha voltar a crescer saudável.',
+    slug: 'micose-nas-unhas',
+    title: 'Micose nas unhas',
+    short: 'Tratamento da micose de unha (onicomicose) com acompanhamento, pra unha voltar a crescer saudável.',
     icon: 'drop',
   },
   {
@@ -116,8 +120,12 @@ export const faqs = [
     a: 'De segunda a sábado, das 9h às 18h. Domingo o consultório fica fechado. O atendimento é com hora marcada pelo WhatsApp (47) 99731-9955.',
   },
   {
+    q: 'A Alexsandra Rodrigues tem formação em Podologia?',
+    a: 'Tem. Ela é a primeira podóloga de Itapema com formação de nível superior em Podologia, pela Universidade Anhembi Morumbi, em São Paulo. São 30 anos de profissão, com especializações na área.',
+  },
+  {
     q: 'O que faz uma podóloga?',
-    a: 'A podóloga cuida da saúde dos pés e das unhas: trata unha encravada, fungos, calos, rachaduras e acompanha pés de pessoas com diabetes. É um cuidado de saúde, diferente de pedicure estética.',
+    a: 'A podóloga cuida da saúde dos pés e das unhas: trata unha encravada, micose, calos, rachaduras e acompanha pés de pessoas com diabetes. É um cuidado de saúde, diferente de pedicure estética.',
   },
   {
     q: 'Tratar unha encravada dói?',
@@ -128,7 +136,7 @@ export const faqs = [
     a: 'Pode e deve. Pessoas com diabetes têm mais risco de feridas nos pés que demoram a cicatrizar, por isso o acompanhamento com podóloga ajuda a prevenir complicações. O atendimento é feito com cuidados específicos pra esse público.',
   },
   {
-    q: 'Quantas sessões preciso pra tratar fungos na unha?',
+    q: 'Quantas sessões preciso pra tratar micose na unha?',
     a: 'Depende do quanto a unha está comprometida. Na avaliação a Alexsandra explica o plano de tratamento e a frequência ideal pro seu caso, sem promessa genérica.',
   },
   {

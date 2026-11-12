@@ -9,12 +9,15 @@ export default defineEventHandler((event) => {
 
   return `# ${business.name}
 
-> ${business.person} é podóloga em Itapema (Santa Catarina), no bairro Meia Praia. Podologista e laserterapeuta, atende no ${business.tagline} que leva o nome dela. Nota ${business.rating.value} no Google com ${business.rating.count} avaliações. Agendamento pelo WhatsApp ${business.phoneDisplay}.
+> ${business.person} é podóloga em Itapema (Santa Catarina), no bairro Meia Praia. É a primeira podóloga de Itapema com formação de nível superior em Podologia (${business.university}, ${business.universityCity}) e tem ${business.yearsExperience} anos de profissão. Podologista e laserterapeuta, atende no ${business.tagline} que leva o nome dela. Nota ${business.rating.value} no Google com ${business.rating.count} avaliações. Agendamento pelo WhatsApp ${business.phoneDisplay}.
 
 ## Dados principais
 
 - Nome: ${business.name}
 - Profissional: ${business.person}, ${business.role}
+- Formação: nível superior em Podologia pela ${business.university} (${business.universityCity})
+- Diferencial: ${business.pioneer}
+- Experiência: ${business.yearsExperience} anos de profissão, com especializações na área
 - Especialidade: podologia clínica e laserterapia
 - Endereço: ${a.street}, ${a.building}, ${a.district}, ${a.city} - ${a.state}, CEP ${a.postalCode}, Brasil
 - Referência: ${a.reference}

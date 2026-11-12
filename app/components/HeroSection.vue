@@ -16,7 +16,7 @@ import { business, waLink } from '#shared/business'
         </h1>
 
         <p class="hero__lead" data-reveal style="--d: 420ms">
-          Unha encravada, fungos, calos e pé diabético. A Alexsandra Rodrigues atende com hora marcada,
+          Unha encravada, micose, calos e pé diabético. A Alexsandra Rodrigues atende com hora marcada,
           tempo pra ouvir e um tratamento pensado pro seu caso.
         </p>
 
@@ -45,6 +45,12 @@ import { business, waLink } from '#shared/business'
           </span>
           <span class="rating__text"><strong>{{ business.rating.value }}</strong> · {{ business.rating.count }} avaliações no Google</span>
         </a>
+
+        <p class="creds" data-reveal style="--d: 760ms">
+          <span><strong>{{ business.yearsExperience }} anos</strong> de profissão</span>
+          <span class="creds__dot" aria-hidden="true" />
+          <span>Formação superior em Podologia pela <strong>Anhembi Morumbi</strong></span>
+        </p>
       </div>
 
       <div class="hero__visual">
@@ -69,7 +75,7 @@ import { business, waLink } from '#shared/business'
         </div>
         <div class="float-card float-card--b" data-reveal="left" style="--d: 820ms">
           <UiIcon name="graduation" :size="22" />
-          <span>Mentora <strong>#Podolovers</strong></span>
+          <span><strong>1ª de Itapema</strong> com formação<br>superior em Podologia</span>
         </div>
 
         <svg class="hero__swash" viewBox="0 0 400 400" aria-hidden="true">
@@ -186,6 +192,25 @@ import { business, waLink } from '#shared/business'
 }
 .rating__text strong {
   font-weight: 600;
+}
+.creds {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  margin-top: 18px;
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.92);
+}
+.creds strong {
+  font-weight: 600;
+  color: #fff;
+}
+.creds__dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--gold-light);
 }
 
 /* visual */
@@ -329,6 +354,14 @@ import { business, waLink } from '#shared/business'
 @media (max-width: 520px) {
   .hero__actions .btn {
     width: 100%;
+  }
+  .creds {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .creds__dot {
+    display: none;
   }
   .float-card {
     padding: 10px 14px;

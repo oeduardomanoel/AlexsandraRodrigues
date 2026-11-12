@@ -5,7 +5,7 @@ const { public: { siteUrl } } = useRuntimeConfig()
 
 const title = 'Podóloga em Itapema | Alexsandra Rodrigues · Meia Praia'
 const description =
-  'Podóloga em Itapema (Meia Praia) com nota 5,0 no Google. Unha encravada, fungos, calos, pé diabético e laserterapia. Agende pelo WhatsApp (47) 99731-9955.'
+  'Podóloga em Itapema há 30 anos, com formação superior pela Anhembi Morumbi e nota 5,0 no Google. Unha encravada, micose, pé diabético e laserterapia.'
 const ogImage = `${siteUrl}/og-image.jpg`
 
 useSeoMeta({
@@ -99,7 +99,20 @@ const jsonLd = {
       '@id': personId,
       name: business.person,
       jobTitle: business.role,
+      description: `${business.pioneer}, formada pela ${business.university} (${business.universityCity}). ${business.yearsExperience} anos de profissão.`,
       worksFor: { '@id': orgId },
+      alumniOf: { '@type': 'CollegeOrUniversity', name: business.university, address: { '@type': 'PostalAddress', addressLocality: business.universityCity, addressCountry: 'BR' } },
+      hasCredential: {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'degree',
+        name: 'Formação de nível superior em Podologia',
+        recognizedBy: { '@type': 'CollegeOrUniversity', name: business.university },
+      },
+      hasOccupation: {
+        '@type': 'Occupation',
+        name: 'Podóloga',
+        experienceRequirements: `${business.yearsExperience} anos de experiência`,
+      },
       image: `${siteUrl}/img/alexsandra-retrato-860.webp`,
       sameAs: [business.instagram],
       knowsAbout: ['Podologia', 'Laserterapia', 'Pé diabético'],
